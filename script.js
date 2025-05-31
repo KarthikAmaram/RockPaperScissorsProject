@@ -22,4 +22,48 @@ function getHumanChoice() {
     return choice;
 }
 
-console.log(getHumanChoice());
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+    if (humanChoice == "rock") {
+        if (computerChoice == "paper") {
+            console.log("You Lose! " + computerChoice + " beats " + humanChoice)
+            computerScore += 1;
+        }
+        else if (computerChoice == "scissors") {
+            console.log("You Win! " + humanChoice + " beats " + computerChoice)
+            humanScore += 1
+        }
+        else {
+            console.log("Tie!")
+        }
+    } else if (humanChoice == "scissors") {
+        if (computerChoice == "rock") {
+            console.log("You Lose! " + computerChoice + " beats " + humanChoice)
+            computerScore += 1;
+        }
+        else if (computerChoice == "paper") {
+            console.log("You Win! " + humanChoice + " beats " + computerChoice)
+            humanScore += 1
+        }
+        else {
+            console.log("Tie!")
+        }
+    } else {
+        if (computerChoice == "scissors") {
+            console.log("You Lose! " + computerChoice + " beats " + humanChoice)
+            computerScore += 1;
+        }
+        else if (computerChoice == "rock") {
+            console.log("You Win! " + humanChoice + " beats " + computerChoice)
+            humanScore += 1
+        }
+        else {
+            console.log("Tie!")
+        }
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
