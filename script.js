@@ -77,35 +77,6 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-// function playGame() {
-//     for (let i = 1; i <= 5; i++) {
-//         rockButton.addEventListener("click", () => {
-//             let humanSelection = "rock";
-//             let computerSelection = getComputerChoice();
-//             playRound(humanSelection, computerSelection);
-//         });
-//         paperButton.addEventListener("click", () => {
-//             let humanSelection = "paper";
-//             let computerSelection = getComputerChoice();
-//             playRound(humanSelection, computerSelection);
-//         });
-//         scissorsButton.addEventListener("click", () => {
-//             let humanSelection = "scissors";
-//             let computerSelection = getComputerChoice();
-//             playRound(humanSelection, computerSelection);
-//         });
-//     }
-//     if (humanScore > computerScore) {
-//         div.textContent = "Player Wins!";
-//     } else if (computerScore > humanScore) {
-//         div.textContent = "Computer Wins!";
-//     } else {
-//         cdiv.textContent = "Draw!";
-//     }
-// }
-
-// playGame();
-
 rockButton.addEventListener("click", () => {
     let humanSelection = "rock";
     let computerSelection = getComputerChoice();
